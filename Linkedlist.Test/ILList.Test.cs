@@ -3,7 +3,6 @@ namespace Linkedlist.Test;
 
 public class ILListTest
 {
-
     [Fact]
     public void CreateLList_HeadAndTailShouldHaveNull()
     {
