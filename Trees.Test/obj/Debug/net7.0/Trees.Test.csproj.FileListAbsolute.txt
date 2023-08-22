@@ -99,3 +99,7 @@
 /Users/sameergiri/Projects/data-structures/Trees.Test/obj/Debug/net7.0/Trees.Test.pdb
 /Users/sameergiri/Projects/data-structures/Trees.Test/obj/Debug/net7.0/Trees.Test.genruntimeconfig.cache
 /Users/sameergiri/Projects/data-structures/Trees.Test/obj/Debug/net7.0/ref/Trees.Test.dll
+/Users/sameergiri/Projects/data-structures/Trees.Test/bin/Debug/net7.0/FluentAssertions.dll
+/Users/sameergiri/Projects/data-structures/Trees.Test/bin/Debug/net7.0/System.Configuration.ConfigurationManager.dll
+/Users/sameergiri/Projects/data-structures/Trees.Test/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll
+/Users/sameergiri/Projects/data-structures/Trees.Test/bin/Debug/net7.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
