@@ -14,10 +14,9 @@ public class TreeTraversalTest: IClassFixture<TreeFixture>
     {
         // Arrange
         TreeNode<int>? root = _fixture.Root;
-        Traversal<int> traversal = new Traversal<int>();
 
         // Act
-        List<int>? preorderList = traversal.Preorder(root);
+        List<int> preorderList = Traversal<int>.Preorder(root);
 
         // Assert
         List<int> expected = new List<int> { 1, 2, 4, 5, 3 };
@@ -26,17 +25,16 @@ public class TreeTraversalTest: IClassFixture<TreeFixture>
     }
 
     [Fact]
-    public void Traversal_PreorderTraversal_NullRootShouldReturnNull()
+    public void Traversal_PreorderTraversal_NullRootShouldReturnEmptyList()
     {
         // Arrange
         TreeNode<int>? root = null;
-        Traversal<int> traversal = new Traversal<int>();
 
         // Act
-        List<int>? preorderList = traversal.Preorder(root);
+        List<int> preorderList = Traversal<int>.Preorder(root);
 
         // Assert
-        Assert.Null(preorderList);      
+        Assert.Empty(preorderList);      
     }
 
     [Fact]
@@ -44,10 +42,9 @@ public class TreeTraversalTest: IClassFixture<TreeFixture>
     {
         // Arrange
         TreeNode<int>? root = _fixture.Root;
-        Traversal<int> traversal = new Traversal<int>();
 
         // Act
-        List<int>? inorderList = traversal.Inorder(root);
+        List<int> inorderList = Traversal<int>.Inorder(root);
 
         // Assert
         List<int> expected = new List<int> { 4, 2, 5, 1, 3 };
@@ -56,17 +53,15 @@ public class TreeTraversalTest: IClassFixture<TreeFixture>
 
 
     [Fact]
-    public void Traversal_InorderTraversal_NullRootShouldReturnNull()
+    public void Traversal_InorderTraversal_NullRootShouldReturnEmptyList()
     {
         // Arrange
         TreeNode<int>? root = null;
-        Traversal<int> traversal = new Traversal<int>();
-
         // Act
-        List<int>? inorderList = traversal.Inorder(root);
+        List<int> inorderList = Traversal<int>.Inorder(root);
 
         // Assert
-        Assert.Null(inorderList);
+        Assert.Empty(inorderList);
     }
 
     [Fact]
@@ -74,10 +69,9 @@ public class TreeTraversalTest: IClassFixture<TreeFixture>
     {
         // Arrange
         TreeNode<int>? root = _fixture.Root;
-        Traversal<int> traversal = new Traversal<int>();
 
         // Act
-        List<int>? postorderList = traversal.Postorder(root);
+        List<int>? postorderList = Traversal<int>.Postorder(root);
 
         // Assert
         List<int> expected = new List<int> { 4, 5, 2, 3, 1 };
@@ -85,17 +79,30 @@ public class TreeTraversalTest: IClassFixture<TreeFixture>
     }
 
     [Fact]
-    public void Traversal_PostorderTraversal_NullRootShouldReturnNull()
+    public void Traversal_PostorderTraversal_NullRootShouldReturnEmptyList()
     {
         // Arrange
         TreeNode<int>? root = null;
-        Traversal<int> traversal = new Traversal<int>();
 
         // Act
-        List<int>? postorderList = traversal.Postorder(root);
+        List<int> postorderList = Traversal<int>.Postorder(root);
 
         // Assert
-        Assert.Null(postorderList);
+        Assert.Empty(postorderList);
+    }
+
+    [Fact]
+    public void Traversal_LevelOrder_NonNullRootShouldReturnCorrectOrder()
+    {
+        // Arrange
+        TreeNode<int>? root = _fixture.Root;
+
+        // Act
+        List<int> levelOrder = Traversal<int>.LevelOrder(root);
+
+        // Assert
+        List<int> expected = new List<int> { 1, 2, 3, 4, 5 };
+        Assert.Equal<int>(expected, levelOrder);
     }
 
 }

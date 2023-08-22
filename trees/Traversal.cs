@@ -2,46 +2,88 @@
 
 public class Traversal<T>
 {
-    private List<T> _list;
 
-    public Traversal()
+    public static List<T> Inorder(TreeNode<T>? root)
     {
-        _list = new();
+        List<T> list = new();
+        InorderHelper(root, list);
+        return list;
     }
 
-    public List<T>? Inorder(TreeNode<T>? root)
+    private static void InorderHelper(TreeNode<T>? root, List<T> list)
     {
-        if(root is null)
+        if (root is null)
         {
-            return null;
+            return;
         }
-        Inorder(root.Left);
-        _list.Add(root.Data!);
-        Inorder(root.Right);
-        return _list;
+        InorderHelper(root.Left, list);
+        list.Add(root.Data!);
+        InorderHelper(root.Right, list);
     }
 
-    public List<T>? Postorder(TreeNode<T>? root)
+    public static List<T> Postorder(TreeNode<T>? root)
     {
-        if(root is null)
-        {
-            return null;
-        }
-        Postorder(root.Left);
-        Postorder(root.Right);
-        _list.Add(root.Data!);
-        return _list;
+        List<T> list = new();
+        PostorderHelper(root, list);
+        return list;
     }
 
-    public List<T>? Preorder(TreeNode<T>? root)
+    private static void PostorderHelper(TreeNode<T>? root, List<T> list)
     {
-        if(root is null)
+        if (root is null)
         {
-            return null;
+            return;
         }
-        _list.Add(root.Data!);
-        Preorder(root.Left);
-        Preorder(root.Right);
-        return _list;
+        PostorderHelper(root.Left, list);
+        PostorderHelper(root.Right, list);
+        list.Add(root.Data!);
     }
+
+
+    public static List<T> Preorder(TreeNode<T>? root)
+    {
+        List<T> list = new();
+        PreorderHelper(root, list);
+        return list;
+    }
+
+    private static void PreorderHelper(TreeNode<T>? root, List<T> list)
+    {
+        if (root is null)
+        {
+            return;
+        }
+        list.Add(root.Data!);
+        PreorderHelper(root.Left, list);
+        PreorderHelper(root.Right, list);
+    }
+
+    public static List<T> LevelOrder(TreeNode<T>? root)
+    {
+        List<T> list = new();
+
+        if (root is null)
+        {
+            return list;
+        }
+
+        Queue<TreeNode<T>> q = new();
+        q.Enqueue(root);
+        while(q.Count > 0)
+        {
+            TreeNode<T> node = q.Dequeue(); 
+            list.Add(node.Data!);
+            if (node.Left is not null)
+            {
+                q.Enqueue(node.Left);
+            }
+            if (node.Right is not null)
+            {
+                q.Enqueue(node.Right);
+            }
+        }
+
+        return list;
+    }
+
 }
