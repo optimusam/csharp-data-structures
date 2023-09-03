@@ -1,5 +1,4 @@
-﻿using Graphs;
-using FluentAssertions;
+﻿using FluentAssertions;
 namespace Graphs.Test;
 
 public class CreateGraph
@@ -9,7 +8,7 @@ public class CreateGraph
     {
         // Arrange
         GraphBuilder<int> graphBuilder = new GraphBuilder<int>();
-        List<List<int>> edges = new List<List<int>>{};
+        List<List<int>> edges = new();
 
         // Act
         var graph = graphBuilder.CreateGraph(edges);
