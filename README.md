@@ -17,3 +17,5 @@ The following have been implemented till date.
 - Graphs
   - Graph creation.
   - Traversals - Depth-first search (DFS). Breadth-First search (BFS).
+- Set
+  - HashSet with collision handling using chaining technique.
