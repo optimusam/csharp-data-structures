@@ -6,7 +6,7 @@
 public class HashSet<T> where T: IEquatable<T>
     
 {
-    private const int Size = (int)1e5;
+    private const int Size = (int)1e4;
     private Node<T>?[] _nodes;
     public HashSet()
     {
@@ -39,7 +39,7 @@ public class HashSet<T> where T: IEquatable<T>
             {
                 if (prev is null)
                 {
-                    _nodes[pos] = null;
+                    _nodes[pos] = cur.Next;
                 }
                 else
                 { 
