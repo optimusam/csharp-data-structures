@@ -4,8 +4,8 @@ It started out as my journey to learn C# as a Java dev and I thought it might he
 
 All the code written is tested with xUnit and .NET 7. I have tried to follow a TDD design. Generics have been used to provide support for most types.
 
-## Implementations :
-The following have been implemented till date.
+# Data Structures
+The following have been implemented.
 
 - Linked List
   - Add element to head.
@@ -19,3 +19,12 @@ The following have been implemented till date.
   - Traversals - Depth-first search (DFS). Breadth-First search (BFS).
 - Set
   - HashSet with collision handling using chaining technique.
+- Map
+  - HashMap with collision handling using chaining technique.
+
+# Algorithms
+
+The following have been implemented.
+
+- Sorting
+  - Bubble Sort
