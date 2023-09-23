@@ -28,3 +28,4 @@ The following have been implemented.
 
 - Sorting
   - Bubble Sort
+  - Merge Sort

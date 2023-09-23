@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Graphs
+﻿namespace Graphs
 {
     public class GraphBuilder<T> where T : IComparable<T>
     {

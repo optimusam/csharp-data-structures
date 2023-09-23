@@ -1,5 +1,4 @@
-﻿using System;
-namespace Graphs
+﻿namespace Graphs
 {
     public class GraphTraversal<T> where T : IComparable<T>
     {
