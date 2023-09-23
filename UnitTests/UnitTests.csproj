@@ -26,11 +26,9 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Algorithms\Algorithms.csproj" />
-      <ProjectReference Include="..\Graphs\Graphs.csproj" />
-      <ProjectReference Include="..\LinkedLists\LinkedLists.csproj" />
-      <ProjectReference Include="..\Maps\Maps.csproj" />
-      <ProjectReference Include="..\Sets\Sets.csproj" />
-      <ProjectReference Include="..\Trees\Trees.csproj" />
+      <ProjectReference Include="..\DataStructure\DataStructure.csproj" />
+
+
 
 
 
