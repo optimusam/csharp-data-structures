@@ -1,5 +1,4 @@
-﻿using System;
-namespace Graphs.Test
+﻿namespace UnitTests.Graphs
 {
 	[CollectionDefinition("Graph Collection")]
 	public class GraphCollection: IClassFixture<GraphFixture>

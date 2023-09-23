@@ -1,14 +1,14 @@
-﻿namespace Set;
+﻿namespace Sets;
 
 /// <summary>
 /// HashSet implemented using collision chaining technique.
 /// </summary>
-public class HashSet<T> where T: IEquatable<T>
+public class MyHashSet<T> where T: IEquatable<T>
     
 {
     private const int Size = (int)1e4;
     private Node<T>?[] _nodes;
-    public HashSet()
+    public MyHashSet()
     {
         _nodes = new Node<T>[Size];
     }

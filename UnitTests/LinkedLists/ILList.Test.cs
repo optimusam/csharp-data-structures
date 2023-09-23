@@ -1,5 +1,6 @@
-﻿using linkedlist;
-namespace Linkedlist.Test;
+﻿using LinkedLists;
+
+namespace UnitTests.LinkedLists;
 
 public class ILListTest
 {

@@ -1,6 +1,7 @@
-﻿using System;
-using FluentAssertions;
-namespace Graphs.Test
+﻿using FluentAssertions;
+using Graphs;
+
+namespace UnitTests.Graphs
 {
     [Collection("Graph Collection")]
     public class GraphTraversalTest

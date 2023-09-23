@@ -1,5 +1,4 @@
-﻿using System;
-namespace linkedlist;
+﻿namespace LinkedLists;
 
 public class LList<T> : ILList<T>
 {

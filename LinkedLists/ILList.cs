@@ -1,4 +1,4 @@
-﻿namespace linkedlist
+﻿namespace LinkedLists
 {
     public interface ILList<T>
     {

@@ -1,5 +1,7 @@
 ﻿using FluentAssertions;
-namespace Graphs.Test;
+using Graphs;
+
+namespace UnitTests.Graphs;
 
 public class CreateGraph
 {

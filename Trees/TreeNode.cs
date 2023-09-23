@@ -1,5 +1,5 @@
 ﻿using System;
-namespace trees
+namespace Trees
 {
 	public class TreeNode<T>
 	{

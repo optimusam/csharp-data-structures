@@ -1,6 +1,6 @@
-﻿using System;
-using trees;
-namespace Trees.Test
+﻿using Trees;
+
+namespace UnitTests.Trees
 {
 	public class TreeFixture: IDisposable
 	{

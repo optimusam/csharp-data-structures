@@ -1,13 +1,13 @@
 using FluentAssertions;
-
-namespace Set.Test;
+using Sets;
+namespace UnitTests.Sets;
 
 public class HashSetCreation
 {
     [Fact]
     public void HashSet_CreateHashSet_Integer()
     {
-        HashSet<int> set = new HashSet<int>();
+        MyHashSet<int> set = new MyHashSet<int>();
         set.Add(1);      // set = [1]
         set.Add(2);      // set = [1, 2]
         
@@ -29,7 +29,7 @@ public class HashSetCreation
     [Fact]
     public void HashSet_CreateHashSet_String()
     {
-        var set = new HashSet<string>();
+        var set = new MyHashSet<string>();
         set.Add("sameer");
         set.Add("aprajita");
         set.Contains("sameer").Should().BeTrue();

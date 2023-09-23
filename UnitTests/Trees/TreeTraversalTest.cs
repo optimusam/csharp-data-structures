@@ -1,5 +1,7 @@
-﻿namespace Trees.Test;
-using trees;
+﻿using Trees;
+
+namespace UnitTests.Trees;
+
 public class TreeTraversalTest: IClassFixture<TreeFixture>
 {
 

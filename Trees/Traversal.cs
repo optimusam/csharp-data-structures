@@ -1,4 +1,4 @@
-﻿namespace trees;
+﻿namespace Trees;
 
 public class Traversal<T>
 {
