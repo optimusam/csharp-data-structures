@@ -31,3 +31,4 @@ The following have been implemented.
   - Merge Sort
   - Quick Sort (Randomized)
   - Insertion Sort
+  - Selection Sort
