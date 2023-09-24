@@ -30,3 +30,4 @@ The following have been implemented.
   - Bubble Sort
   - Merge Sort
   - Quick Sort (Randomized)
+  - Insertion Sort
